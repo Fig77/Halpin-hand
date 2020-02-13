@@ -12,7 +12,7 @@ class Scrapper
     @doc = raw_parse
   end
 
-  def search_xpath; end 
+  def search_xpath; end
 
   def search_css(selector)
     @doc.css(selector).text
