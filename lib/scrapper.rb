@@ -1,5 +1,5 @@
 require 'nokogiri'
-require_relative 'urlHandle'
+require_relative 'url_handle'
 
 class Scrapper
   attr_reader :site_url
@@ -15,11 +15,11 @@ class Scrapper
   def search_xpath; end
 
   def search_css(selector)
-    puts @doc.css(selector).text
+    @doc.css(selector).text
   end
 
   private
   def url_doc
-    @site_url.getUrl
+    @site_url.read_url
   end
 end
