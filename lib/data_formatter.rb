@@ -1,4 +1,3 @@
-
 class TextCommons
   def initialize; end
 
@@ -7,5 +6,4 @@ class TextCommons
   def ul(string); end
 
   def li(string); end
-
 end

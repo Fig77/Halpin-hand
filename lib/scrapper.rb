@@ -1,5 +1,5 @@
 require 'nokogiri'
-require_relative 'urlHandle'
+require_relative 'url_handle'
 
 class Scrapper
   attr_reader :site_url
@@ -20,6 +20,6 @@ class Scrapper
 
   private
   def url_doc
-    @site_url.get_url
+    @site_url.read_url
   end
 end

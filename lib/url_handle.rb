@@ -1,11 +1,11 @@
 require 'open-uri'
 
 class UrlHandle
-  def initialize(s)
-    @url = s
+  def initialize(site)
+    @url = site
   end
 
-  def get_url
+  def read_url
     open(@url).read
   end
 end
