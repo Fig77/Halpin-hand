@@ -1,4 +1,4 @@
-require_relative 'user_Interface.rb'
+require_relative 'user_interface.rb'
 
 class SceneBase
   def initialize
