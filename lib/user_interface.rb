@@ -4,8 +4,8 @@ class UiCommons
   def initialize; end
 
   def loading(sle)
-    puts 'loading'.yellow
-    dot = '.'
+    puts ' loading'.yellow
+    dot = ' .'
     5.times do
       print dot.yellow
       sleep(0.5)

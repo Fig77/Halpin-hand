@@ -1,13 +1,22 @@
 require_relative 'user_interface.rb'
+require_relative 'menu.rb'
 
-class SceneBase
+class SceneManager
   def initialize
     @single_scene = nil
     @ui = UiCommons.new
+    @app_state = 1
   end
 
   def run
     @ui.loading(1)
     sleep(2)
+    while @app_state == 1
+      @single_scene = MenuScene.new
+      case @single_scene.run
+      when 5
+        exit
+      end
+    end
   end
 end
