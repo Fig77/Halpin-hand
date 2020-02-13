@@ -15,7 +15,7 @@ class Scrapper
   def search_xpath; end
 
   def search_css(selector)
-    puts @doc.css(selector).text
+    @doc.css(selector).text
   end
 
   private
