@@ -1,4 +1,3 @@
-class santaFe
-	def initialize
-	end
+class SantaFe
+  def initialize; end
 end

@@ -14,9 +14,8 @@ class SceneManager
     while @app_state == 1
       @single_scene = MenuScene.new
       case @single_scene.run
-        when 2
-        when 5
-          exit
+      when 5
+        exit
       end
     end
   end

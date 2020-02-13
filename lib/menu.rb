@@ -26,6 +26,6 @@ class MenuScene
     puts " Hi Tester! What can I help you with today?\n".green
     @text.ul(@options)
     input = gets.chomp
-    return input.to_i
+    input.to_i
   end
 end

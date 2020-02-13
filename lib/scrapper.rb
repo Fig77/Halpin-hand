@@ -19,6 +19,7 @@ class Scrapper
   end
 
   private
+
   def url_doc
     @site_url.read_url
   end
