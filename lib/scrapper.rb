@@ -1,26 +1,25 @@
 require 'nokogiri'
-require 'open-uri'
+require_relative 'urlHandle'
 
 class Scrapper
   attr_reader :site_url
 
   def initialize(site)
-    @site_url = site
+    @site_url = UrlHandle.new(site)
   end
 
   def set_scrap_only
-    @doc = Nokogiri::HTML(url_open)
+    @doc = Nokogiri::HTML(url_doc)
   end
 
   def search_xpath; end
 
   def search_css(selector)
-    @doc.css(selector).text
+    puts @doc.css(selector).text
   end
 
   private
-
-  def url_open
-    open(@site_url).read
+  def url_doc
+    @site_url.getUrl
   end
 end
