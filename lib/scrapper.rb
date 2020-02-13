@@ -1,5 +1,5 @@
 require 'nokogiri'
-require 'net/http'
+require 'open-uri'
 
 class Scrapper
   attr_reader :site_url
@@ -9,7 +9,7 @@ class Scrapper
   end
 
   def set_scrap_only
-    @doc = raw_parse
+    @doc = Nokogiri::HTML(url_open)
   end
 
   def search_xpath; end
@@ -20,7 +20,7 @@ class Scrapper
 
   private
 
-  def raw_parse
-    # web = Nokogiri::HTTP.open('site')
+  def url_open
+    open(@site_url).read
   end
 end
