@@ -1,7 +1,6 @@
 
-class textCommons
-  def initialize
-  end
+class TextCommons
+  def initialize; end
 
   def grid(row, col); end
 

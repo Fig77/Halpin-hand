@@ -20,6 +20,6 @@ class Scrapper
 
   private
   def url_doc
-    @site_url.getUrl
+    @site_url.get_url
   end
 end
