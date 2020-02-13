@@ -3,7 +3,6 @@ AllCops:
     - "README.md"
     - "Guardfile"
     - "Rakefile"
-    - "url_handle.rb"
 
   DisplayCopNames: true
 

@@ -23,6 +23,3 @@ class Scrapper
     @site_url.read_url
   end
 end
-scrap = Scrapper.new("https://www.santafeciudad.gov.ar/blogs/agenda-sfc/actividades/2020-02-15/")
-scrap.set_scrap_only
-print scrap.search_css('h2.tribe-events-day-time-slot-heading')
