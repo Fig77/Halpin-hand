@@ -27,7 +27,7 @@ class WhatsOn
     form = page.forms.first
     form.field_with(id: 'login-email').value = @dummy_user_email
     form.field_with(id: 'login-password').value = @dummy_user_pass
-    page = form.submit
+    form.submit
   end
 
   def scrap_website; end
