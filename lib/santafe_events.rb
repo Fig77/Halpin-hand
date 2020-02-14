@@ -11,10 +11,10 @@ class SantaFe
   #  |  | (_) \)/   (_| |_) (_) |_| |_ .  .  .
   #
             "
-    @scrapy = Scrapper.new
+    @daty_format = TextCommons.new
     @css_parameters = ['h2.tribe-events-day-time-slot-heading', 'h3.tribe-events-list-event-title a',
                        'span.tribe-event-date-start', 'div.tribe-events-venue-details a', 'span.tribe-street-address']
-    @daty_format = TextCommons.new
+    @scrapy = Scrapper.new
   end
 
   def run
@@ -22,12 +22,12 @@ class SantaFe
     puts "Please, entere the date you are planning on visitting. \nFormat is : dd-mm-yyyy"
     input = gets.chomp
     begin
-      date = Date.parse(input)
+     date = Date.parse(input)
     rescue ArgumentError
       puts 'WRONG INPUT, DELETING HARD DISK or... try again, whatever'.red
       sleep(1)
       return 0
-    end
+   end
     day = date.strftime('%d')
     month = date.strftime('%m')
     year = date.strftime('%Y')
