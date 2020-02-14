@@ -19,22 +19,22 @@ class UiCommons
     separator += '\n'
   end
 
-  def box_3(_string, _col)
-    '
+  def box_3(strin)
+    "
     + + + + + + + + + + + + + + + + + + +
-     #{string.green}
+     #{strin.green}
     + + + + + + + + + + + + + + + + + + +
-    '
+    "
   end
 end
 
 class TextCommons < UiCommons
   def initialize; end
 
-  def row(string, sep_length)
+  def row(strin, sep_length)
     i = 0
-    while i < string.length - 1
-      puts box_3(string[i...(i + sep_length)], 'green')
+    while i < strin.length - 1
+      puts box_3(strin[i...(i + sep_length)], 'green')
       i += sep_length
     end
   end
@@ -43,19 +43,18 @@ class TextCommons < UiCommons
     i = 0
     column = 0
     while i < row.size
-      print box_3(row[i], 'green')
+      print box_3(row[i])
       print li(col[i])
       i += 1
       column += 1
     end
-    puts '\n\n\n'
   end
 
-  def ul(string, subb = '')
-    string.each { |_x| puts subb + "- #{x}" }
+  def ul(strin, subb = '')
+    strin.each { |x| puts subb + "- #{x}" }
   end
 
-  def li(_string, _char = '')
-    " *#{string}"
+  def li(strin)
+    " *#{strin}"
   end
 end

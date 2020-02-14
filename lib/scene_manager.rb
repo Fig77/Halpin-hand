@@ -4,10 +4,9 @@ require_relative 'menu.rb'
 
 class SceneManager
   def initialize
-    @single_scene = nil
+    @single_scene = MenuScene.new
     @ui = UiCommons.new
     @app_state = 1
-    @single_scene = MenuScene.new
   end
 
   def run
@@ -24,7 +23,6 @@ class SceneManager
         exit
       end
       puts "\e[H\e[2J"
-      @single_scene.run
     end
   end
 end
