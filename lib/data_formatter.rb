@@ -31,19 +31,32 @@ end
 class TextCommons < UiCommons 
   def initialize; end
 
-  def row(string, sep_length, content_under = "")
-  	i = 0
-  	cuantity = string.length / sep_length
-  	while i < string.length - 1
-  		puts box_3(string[i...(i + sep_length)], "green")
-  		puts content_under if content_under.length != 0
-  		i += sep_length
-  	end
+  def row(string, sep_length)
+    i = 0
+    cuantity = string.length / sep_length
+    while i < string.length - 1
+      puts box_3(string[i...(i + sep_length)], "green")
+      i += sep_length
+    end
   end
+
+  def row_with_content(row, col)
+    i = 0
+    column = 0
+    while i < row.size
+      print box_3(row[i], "green")
+      print li(col[i])
+      i += 1
+      column += 1
+    end
+    puts "\n\n\n"
+  end 
 
   def ul(string, subb = "")
     string.each { |x| puts subb + "- #{x}" }
   end
 
-  def li(string); end
+  def li(string, char = "")
+    " *#{string}"
+  end
 end
