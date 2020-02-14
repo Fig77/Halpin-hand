@@ -20,13 +20,3 @@ describe 'UiCommons' do
     end
   end
 end
-
-describe 'TextCommons' do
-  let(:text) { TextCommons.new }
-  describe '#ul' do
-    context 'given a set of words will return them outputted as a list' do
-      it 'Returns two words on a list' do
-      end
-    end
-  end
-end
