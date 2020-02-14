@@ -1,4 +1,3 @@
-require_relative 'user_interface.rb'
 require 'colorize'
 
 class UiCommons
@@ -20,26 +19,30 @@ class UiCommons
     separator += "\n"
   end
 
-  def box_3(string)
-   s_in_box =  "  + + + + + + + + + + + + + + + + + + +
-                  #{string}                         
-                  + + + + + + + + + + + + + + + + + + + "
+  def box_3(string, col)
+   s_in_box ="  
+   + + + + + + + + + + + + + + + + + + +
+    #{string.green}
+   + + + + + + + + + + + + + + + + + + + 
+   "
   end
 end
 
 class TextCommons < UiCommons 
   def initialize; end
 
-  def row(string, sep_length)
+  def row(string, sep_length, content_under = "")
   	i = 0
-  	while i < string.length
-  		puts box_3(string[i...sep_length])
+  	cuantity = string.length / sep_length
+  	while i < string.length - 1
+  		puts box_3(string[i...(i + sep_length)], "green")
+  		puts content_under if content_under.length != 0
   		i += sep_length
   	end
   end
 
-  def ul(string)
-    string.each { |x| puts "- #{x}" }
+  def ul(string, subb = "")
+    string.each { |x| puts subb + "- #{x}" }
   end
 
   def li(string); end

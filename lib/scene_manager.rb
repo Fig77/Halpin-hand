@@ -1,4 +1,4 @@
-require_relative 'user_interface.rb'
+require_relative 'data_formatter.rb'
 require_relative 'menu.rb'
 
 class SceneManager

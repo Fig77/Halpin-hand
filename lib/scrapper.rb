@@ -4,11 +4,12 @@ require_relative 'url_handle'
 class Scrapper
   attr_accessor :site_url
 
-  def initialize(site)
-    @site_url = UrlHandle.new(site)
+  def initialize(site = "null")
+    @site_url = site
   end
 
   def set_scrap_only
+    make_url
     @doc = Nokogiri::HTML(url_doc)
   end
 
@@ -20,11 +21,11 @@ class Scrapper
 
   private
 
+  def make_url
+    @site_url = UrlHandle.new(@site_url)
+  end
+
   def url_doc
     @site_url.read_url
   end
 end
-
-#scrap = Scrapper.new("https://www.santafeciudad.gov.ar/blogs/agenda-sfc/actividades/2020-02-15/")
-#scrap.set_scrap_only
-#print scrap.search_css('h2.tribe-events-day-time-slot-heading')
