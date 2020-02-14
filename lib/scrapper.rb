@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'mechanize'
 require_relative 'url_handle'
 
 class Scrapper
@@ -27,5 +28,22 @@ class Scrapper
 
   def url_doc
     @site_url.read_url
+  end
+end
+
+class ActiveScrapper < Scrapper
+  def initialize(site = 'null')
+    super(site)
+    @agent = Mechanize.new
+  end
+
+  def set_agent
+    @agent.get(@site_url)
+  end
+
+  private
+
+  def make_url
+    super
   end
 end
