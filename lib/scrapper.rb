@@ -4,7 +4,7 @@ require_relative 'url_handle'
 class Scrapper
   attr_accessor :site_url
 
-  def initialize(site = "null")
+  def initialize(site = 'null')
     @site_url = site
   end
 

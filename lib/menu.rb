@@ -23,7 +23,7 @@ class MenuScene
 
   def run
     puts @title_screen
-    puts " Hi Tester! What can I help you with today?\n".green
+    puts ' Hi Tester! What can I help you with today?\n'.green
     @text.ul(@options)
     input = gets.chomp
     input.to_i
