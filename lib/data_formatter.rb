@@ -16,7 +16,7 @@ class UiCommons
   def separate_with(char, size)
     separator = ''
     size.times { separator += char }
-    separator += '\n'
+    separator
   end
 
   def box_3(strin)
