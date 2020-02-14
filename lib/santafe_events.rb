@@ -35,9 +35,9 @@ class SantaFe
     @daty_format.loading(2)
     @scrapy.set_scrap_only
     draw
-    puts 'press ener to continue ... '.red
+    puts "\npress ener to continue ... ".red
     gets.chomp
-    2
+    0
   end
 
   private
