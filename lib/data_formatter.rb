@@ -16,7 +16,7 @@ class UiCommons
   def separate_with(char, size)
     separator = ''
     size.times { separator += char }
-    separator += '\n'
+    separator
   end
 
   def box_3(strin)
@@ -30,14 +30,6 @@ end
 
 class TextCommons < UiCommons
   def initialize; end
-
-  def row(strin, sep_length)
-    i = 0
-    while i < strin.length - 1
-      puts box_3(strin[i...(i + sep_length)], 'green')
-      i += sep_length
-    end
-  end
 
   def row_with_content(row, col)
     i = 0

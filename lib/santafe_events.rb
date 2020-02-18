@@ -19,15 +19,16 @@ class SantaFe
 
   def run
     puts @title.yellow.center(1)
-    puts "Please, entere the date you are planning on visitting. \nFormat is : dd-mm-yyyy"
+    puts "Please, entere the date you are planning on visitting. \nFormat is : dd-mm-yyyy (if day is to far ahead)
+    or to way behind output might be empty. If no event is planned for that day, will also show nothing but void."
     input = gets.chomp
     begin
-     date = Date.parse(input)
+      date = Date.parse(input)
     rescue ArgumentError
       puts 'WRONG INPUT, DELETING HARD DISK or... try again, whatever'.red
       sleep(1)
       return 0
-   end
+    end
     day = date.strftime('%d')
     month = date.strftime('%m')
     year = date.strftime('%Y')
@@ -65,6 +66,7 @@ class SantaFe
     i = 0
     content = []
     while i < title.size
+      adress[i] = 'Adress not found' if adress[i].nil?
       string_aux = "#{title[i].cyan}\n      - #{day[i].green}\n     -- #{adress[i].cyan}"
       content.push(string_aux)
       i += 1

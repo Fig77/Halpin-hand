@@ -37,11 +37,11 @@ Halpin is a web scrapper that will perform a set of different tasks, regarding g
 This project was built with: 
 * Ruby 2.6.0
 * Stickler
-* Rubocop
-* Rspec
-* Nikogiri
-* Colorize
-* Mechanize (Items not implemented on live yet)
+* Rubocop - requires install
+* Rspec - requires install
+* Nikogiri - requires install
+* Colorize - requires install
+* Mechanize (Items not implemented on live yet) - requires install
 
 ### Prerequisites
  The development environment uses `Ruby`, hence install ruby before proceeding.
@@ -52,7 +52,7 @@ This project was built with:
 ### Installation and set-up
 1. You can download the zip project clicking [here](https://github.com/Fig77/Halpin-hand.git) or you can clone the project using the command - git clone <https://github.com/Fig77/Halpin-hand.git> 
 2. If you are in windows, just navigate to the Halpin-hand/bin and click on main to start the app. On Linux, navigate with console using [cd command](https://help.ubuntu.com/community/UsingTheTerminal) and then write `ruby bin/main.rb`
-
+3. Run bundle to install extra gems needed to load ( command bundle install on command line, or install with gem install [name] the gems listed [here](#built-with) that says requires install ). [Need help with bundle?](https://bundler.io/)
 
 <!-- USAGE EXAMPLES -->
 
