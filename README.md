@@ -54,7 +54,6 @@ This project was built with:
 2. If you are in windows, just navigate to the Halpin-hand/bin and click on main to start the app. On Linux, navigate with console using [cd command](https://help.ubuntu.com/community/UsingTheTerminal) and then write `ruby bin/main.rb`
 3. Run bundle to install extra gems needed to load ( command bundle install on command line, or install with gem install [name] the gems listed [here](#built-with) that says requires install ). [Need help with bundle?](https://bundler.io/)
 
-
 <!-- USAGE EXAMPLES -->
 
 ## How to Use
