@@ -28,10 +28,10 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project 
-Halpin is a web scrapper that will perform a set of different tasks, regarding gathering data. The end product should be able to release my monthly routine of some mundane tasks, involving around printing bills / checking said bills status.
+Halpin is a web scraper that will perform a set of different tasks, regarding gathering data. The end product should be able to release my monthly routine of some mundane tasks, involving around printing bills/checking said bills status.
 
 ### Objective
- Main objective is to put into use the concepts learned in the Ruby section of Microverse Curriculum. Including common language usage, OOP concepts and practices. Also to test time management due to time constrains in project deadline.
+ The main objective is to put into use the concepts learned in the Ruby section of Microverse Curriculum. Including common language usage, OOP concepts, and practices. Also to test time management due to time constraints in the project deadline.
 
 ### Built With
 This project was built with: 
@@ -41,7 +41,7 @@ This project was built with:
 * Rspec - requires install
 * Nikogiri - requires install
 * Colorize - requires install
-* Mechanize (Items not implemented on live yet) - requires install
+* Mechanize (Items not implemented live yet) - requires install
 
 ### Prerequisites
  The development environment uses `Ruby`, hence install ruby before proceeding.
@@ -52,7 +52,7 @@ This project was built with:
 ### Installation and set-up
 1. You can download the zip project clicking [here](https://github.com/Fig77/Halpin-hand.git) or you can clone the project using the command - git clone <https://github.com/Fig77/Halpin-hand.git> 
 2. If you are in windows, just navigate to the Halpin-hand/bin and click on main to start the app. On Linux, navigate with console using [cd command](https://help.ubuntu.com/community/UsingTheTerminal) and then write `ruby bin/main.rb`
-3. Run bundle to install extra gems needed to load ( command bundle install on command line, or install with gem install [name] the gems listed [here](#built-with) that says requires install ). [Need help with bundle?](https://bundler.io/)
+3. Run bundle to install extra gems needed to load ( command bundle install on the command line, or install with gem install [name] the gems listed [here](#built-with) that says requires to install ). [Need help with bundle?](https://bundler.io/)
 
 <!-- USAGE EXAMPLES -->
 
@@ -60,14 +60,14 @@ This project was built with:
 
 ### Instructions
 
-* Once you enter the app, you'll be greeted by the Menu. In there you'll see which functions (of those that appear on screen) are currently active, what will be next, and what will probably take a bit longer.
+* Once you enter the app, you'll be greeted by the Menu. In there you'll see which functions (of those that appear on-screen) are currently active, what will be next, and what will probably take a bit longer.
 <br>
 <img src="assets/menu-items.png" alt="menu" width="618">
-* You can then press the correspondent number, and enter to proceed. Once task is complete, you'll be return to this menu.
+* You can then press the correspondent number, and enter to proceed. Once the task is complete, you'll be returning to this menu.
 
 #### Santa-fe events by date
 
-* Here the app will scrap through Santa-fe's city website, and will get events with start time and location of a given specific date. If no event is found, nothing will be shown. If an invalid date is entered, you'll be return to the menu.
+* Here the app will scrape through Santa-Fe's city website and will get events with start time and location of a given specific date. If no event is found, nothing will be shown. If an invalid date is entered, you'll be returning to the menu.
 * After date format is shown, you'll be expected to enter a date with said format.
 <br>
 <img src="assets/events.png" alt="menu" width="618">
