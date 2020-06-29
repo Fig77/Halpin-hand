@@ -31,7 +31,7 @@
 Halpin is a web scrapper that will perform a set of different tasks, regarding gathering data. The end product should be able to release my monthly routine of some mundane tasks, involving around printing bills / checking said bills status.
 
 ### Objective
- Main objective is to put into use the concepts learned in the Ruby section of Microverse Curriculum. Including common language usage, OOP concepts and practices. Also to test time managing / item prioritization due to time constrains in project deadline.
+ Main objective is to put into use the concepts learned in the Ruby section of Microverse Curriculum. Including common language usage, OOP concepts and practices. Also to test time management due to time constrains in project deadline.
 
 ### Built With
 This project was built with: 
