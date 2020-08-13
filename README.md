@@ -12,44 +12,29 @@
 </p>
 
 
+<!-- ABOUT THE PROJECT -->
+## About The Project 
+Halpin is a web scraper that will perform a set of different tasks, regarding gathering data. The end product should be able to release my monthly routine of some mundane tasks, involving around printing bills/checking said bills status (Deployment with this feature is not on this demo).The main objective is to put into use the concepts learned in the Ruby section of Microverse Curriculum. Including common language usage, OOP concepts, and practices. Also to test time management due to time constraints in the project deadline.
+
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
-
-* [About the Project](#about-the-project)
+* [Installation](#how-to-play)
   * [Built With](#built-with)
-* [How to Install](#how-to-play)
-	* [Requirements](#perquisites)
+  * [Requirements](#perquisites)
 * [How to Use](#instructions)
 	* [Events by date](#Santa-fe-events-by-date)
-* [Roadmap](#roadmap)
+* [Future Improvments](#future-improvments)
 * [License](#license)
 * [Contact](#contact)
 
-
-<!-- ABOUT THE PROJECT -->
-## About The Project 
-Halpin is a web scraper that will perform a set of different tasks, regarding gathering data. The end product should be able to release my monthly routine of some mundane tasks, involving around printing bills/checking said bills status.
-
-### Objective
- The main objective is to put into use the concepts learned in the Ruby section of Microverse Curriculum. Including common language usage, OOP concepts, and practices. Also to test time management due to time constraints in the project deadline.
-
-### Built With
-This project was built with: 
-* Ruby 2.6.0
-* Stickler
-* Rubocop - requires install
-* Rspec - requires install
-* Nikogiri - requires install
-* Colorize - requires install
-* Mechanize (Items not implemented live yet) - requires install
+## Installation
 
 ### Prerequisites
  The development environment uses `Ruby`, hence install ruby before proceeding.
   - Mac OS - `brew install ruby`
   - Linux - `sudo apt-get install ruby-full`
   - Windows - Download RubyInstaller [here](https://rubyinstaller.org/), run it, and you are done!
-
-### Installation and set-up
+  
 1. You can download the zip project clicking [here](https://github.com/Fig77/Halpin-hand.git) or you can clone the project using the command - git clone <https://github.com/Fig77/Halpin-hand.git> 
 2. If you are in windows, just navigate to the Halpin-hand/bin and click on main to start the app. On Linux, navigate with console using [cd command](https://help.ubuntu.com/community/UsingTheTerminal) and then write `ruby bin/main.rb`
 3. Run bundle to install extra gems needed to load ( command bundle install on the command line, or install with gem install [name] the gems listed [here](#built-with) that says requires to install ). [Need help with bundle?](https://bundler.io/)
@@ -74,7 +59,7 @@ This project was built with:
 
 <!-- ROADMAP -->
 
-## Roadmap
+## Future Improvements
 
 See the [open issues ](https://github.com/Fig77/Halpin-hand/issues)for a list of proposed features (and known issues).
 
