@@ -89,7 +89,7 @@ See the [open issues ](https://github.com/Fig77/Halpin-hand/issues) for a list o
 
 * Facundo Iglesias - [Github profile](https://github.com/Fig77)
 * Email - fig.igle@gmail.com
-* LinkedIn - linkedin.com/in/figlesias.com
+* LinkedIn - https://linkedin.com/in/figlesias.com
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
