@@ -14,7 +14,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project 
-Halpin is a web scraper that will perform a set of different tasks, regarding gathering data. The end product should be able to release my monthly routine of some mundane tasks, involving around printing bills/checking said bills status (Deployment with this feature is not on this demo). Made with Ruby♦️
+Halpin is a web scraper that will perform a set of different tasks, like showing particular information asked for the user, scrapped from the web. The end product . Made with Ruby & [Nokogiri](https://rubygems.org/gems/nokogiri/versions/1.6.8?locale=en) for scrapping♦️
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
