@@ -14,7 +14,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project 
-Halpin is a web scraper that will perform a set of different tasks, regarding gathering data. The end product should be able to release my monthly routine of some mundane tasks, involving around printing bills/checking said bills status (Deployment with this feature is not on this demo).The main objective is to put into use the concepts learned in the Ruby section of Microverse Curriculum. Including common language usage, OOP concepts, and practices. Also to test time management due to time constraints in the project deadline.
+Halpin is a web scraper that will perform a set of different tasks, regarding gathering data. The end product should be able to release my monthly routine of some mundane tasks, involving around printing bills/checking said bills status (Deployment with this feature is not on this demo). Made with Ruby♦️
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
