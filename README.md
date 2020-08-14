@@ -19,8 +19,8 @@ Halpin is a web scraper that will perform a set of different tasks, regarding ga
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 * [Installation](#how-to-play)
-  * [Built With](#built-with)
   * [Requirements](#perquisites)
+  * [Built With](#built-with)
 * [How to Use](#instructions)
 	* [Events by date](#Santa-fe-events-by-date)
 * [Future Improvments](#future-improvments)
@@ -34,6 +34,13 @@ Halpin is a web scraper that will perform a set of different tasks, regarding ga
   - Mac OS - `brew install ruby`
   - Linux - `sudo apt-get install ruby-full`
   - Windows - Download RubyInstaller [here](https://rubyinstaller.org/), run it, and you are done!
+
+### Built with
+
+* Nokogiri
+* Mechanize
+* Colorize
+* RSpec
   
 1. You can download the zip project clicking [here](https://github.com/Fig77/Halpin-hand.git) or you can clone the project using the command - git clone <https://github.com/Fig77/Halpin-hand.git> 
 2. If you are in windows, just navigate to the Halpin-hand/bin and click on main to start the app. On Linux, navigate with console using [cd command](https://help.ubuntu.com/community/UsingTheTerminal) and then write `ruby bin/main.rb`
