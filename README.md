@@ -23,6 +23,7 @@ Halpin is a web scraper that will perform a set of different tasks, regarding ga
   * [Requirements](#perquisites)
 * [How to Use](#instructions)
 	* [Events by date](#Santa-fe-events-by-date)
+* [Testing](#testing)
 * [Future Improvments](#future-improvments)
 * [License](#license)
 * [Contact](#contact)
@@ -66,11 +67,22 @@ Halpin is a web scraper that will perform a set of different tasks, regarding ga
 <br>
 <img src="assets/events.png" alt="menu" width="618">
 
+## Testing
+
+Testing was done using RSpec. You can run the tests with the following command
+```bash
+
+bundle exec rspec
+
+```
+
 <!-- ROADMAP -->
 
 ## Future Improvements
 
-See the [open issues ](https://github.com/Fig77/Halpin-hand/issues)for a list of proposed features (and known issues).
+* Translation from received data into English
+
+See the [open issues ](https://github.com/Fig77/Halpin-hand/issues) for a list of proposed features (and known issues).
 
 <!-- CONTACT -->
 ## Contact
